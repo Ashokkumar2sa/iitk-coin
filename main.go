@@ -33,10 +33,10 @@ func main() {
 	rows, _ :=
 		database.Query("SELECT id, firstname, lastname FROM people")
 	var id int
-	var firstname string
-	var lastname string
+	var c_name string
+	var c_rollno string
 	for rows.Next() {
-		rows.Scan(&id, &firstname, &lastname)
-		fmt.Println(strconv.Itoa(id) + ": " + firstname + " " + lastname)
+		rows.Scan(&id, &c_name, &c_rollno)
+		fmt.Println(strconv.Itoa(id) + ": " + c_name + " " + c_rollno)
 	}
 }
