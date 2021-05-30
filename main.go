@@ -15,16 +15,20 @@ func main() {
 		database.Prepare("CREATE TABLE IF NOT EXISTS people (id INTEGER PRIMARY KEY, firstname TEXT, lastname TEXT)")
 	statement.Exec()
 
-	/*// need response from user
-	resp, err := http.Get("https://localhost/8000")
-	if err != nil {
-		log.Fatalln(err)
-	}*/
 
 	statement, _ =
 		database.Prepare("INSERT INTO people (firstname, lastname) VALUES (?, ?)")
-	statement.Exec("Ashok", "190195")
-	statement.Exec("User", "roll no")
+        
+	//taking input form a user 
+	fmt.Println("Enter Your Name: ")
+	var name string
+	fmt.Scanln(&name)
+
+	fmt.Println("Enter Your Roll no: ")
+	var rollno string
+	fmt.Scanln(&rollno)
+
+	statement.Exec(name, rollno)
 
 	rows, _ :=
 		database.Query("SELECT id, firstname, lastname FROM people")
