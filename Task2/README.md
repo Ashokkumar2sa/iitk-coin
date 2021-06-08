@@ -2,7 +2,7 @@ Task2
 
 In this we created three endpoints /login /signup /secretpage
 
-Run the http_main.go in the terminal-1, then open other terminal-2 to and use curl "curl http://localhost:9000/endpoint"  this would prompt user and ask information in terminal-1 where we would give the required input. 
+Run the http_main.go in the terminal-1, then open other terminal-2 to and use curl "curl http://localhost:9000/endpoint" ( endpoint here refer to described endpints  )this would prompt user and ask information in terminal-1 where we would give the required input. 
 
 
 For Signup we take 3 input form user Username Roll number and password. We check if user has not alresdy signedup and also the inpu string are valid.Then we apply hashing and salting and then made an entry for the user in our database.
