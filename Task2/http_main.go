@@ -13,7 +13,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 )
 
-var SigningKey = []byte("secretkeyfortoken")
+var SigningKey = []byte("secretkeyfortoken") // this wiill be stord as an environment variable for simplicity stroed directly here
 
 func GenerateJWT(rollno string) (string, error) {
 	token := jwt.New(jwt.SigningMethodHS256)
