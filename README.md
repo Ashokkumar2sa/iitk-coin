@@ -1,7 +1,9 @@
 # IITK-Coin
 
 Golang Code Snippets for IITK-Coin Project by Ashok Kumar Saini
+
 Task 3
+
 Endpoint /balance /transfer /award are created
 
 The balance ednpoint will ask for roll no and would give the number of coin the person has
