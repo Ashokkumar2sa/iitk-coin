@@ -10,7 +10,7 @@ The award will take in the roll no and the amount and would update the same in d
 
 The tranfer will take the roll nos of the participant and the amount
 
-The have to improved upon concurrency it is not up to date
+The code have to improved, it is not up to date and has few errors.
 
 Task2
 
